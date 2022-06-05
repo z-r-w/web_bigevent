@@ -49,10 +49,9 @@
                         return layer.msg('登录失败')
                     }
                     layer.msg('登录成功')
-                    // console.log(res.token)
+                    console.log(res.token)
                     localStorage.setItem('token', res.token)
-                    location.href = 'http://127.0.0.1:5500/index.html'
-                    
+                    location.href = '/index.html'
                 }
 
             })
